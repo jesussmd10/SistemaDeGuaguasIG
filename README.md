@@ -87,3 +87,7 @@ Cada `way` que tenga un tag con `highway` se convierte en una `THREE.Line` con:
 ## Demo en Vivo (CodeSandbox)
 
 [![Vista previa del proyecto](./CapturaSimulacion.png)](https://codesandbox.io/p/sandbox/ig2526-s8-forked-3khy44)
+
+## Autor
+
+**Jesús Santacruz Martín-Delgado**
