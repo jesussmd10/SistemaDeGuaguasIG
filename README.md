@@ -1,2 +1,0 @@
-# SistemaDeGuaguasIG
-Created with CodeSandbox

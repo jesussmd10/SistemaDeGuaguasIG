@@ -259,12 +259,19 @@ function esEdificio(way) {
   return false;
 }
 
+// =====================================================
+// PROCESAR EDIFICIOS
+// =====================================================
+
 function dibujarEdificio(puntos) {
   if (THREE.ShapeUtils.isClockWise(puntos)) puntos.reverse();
 
   const shape = new THREE.Shape(puntos);
+
+  const alturaEdificio = 0.04;
+
   const geo = new THREE.ExtrudeGeometry(shape, {
-    depth: 0.04,
+    depth: alturaEdificio,
     bevelEnabled: false,
   });
 
@@ -276,9 +283,9 @@ function dibujarEdificio(puntos) {
       metalness: 0.1,
     })
   );
-
   mesh.rotation.x = Math.PI / 2;
-  mesh.position.y = 0.002;
+  mesh.position.y = alturaEdificio + 0.002;
+
   scene.add(mesh);
 }
 
